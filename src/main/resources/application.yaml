@@ -1,0 +1,23 @@
+camunda.bpm:
+  webapp:
+    index-redirect-enabled: true
+  admin-user:
+    id: Administrator
+    password: i0i0Board
+  metrics:
+    enabled: false
+    db-reporter-activate: false
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/camunda
+    username: postgres
+    password: rootpassword
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+server.port: 8090
